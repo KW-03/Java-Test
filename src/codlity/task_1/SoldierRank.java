@@ -29,9 +29,15 @@ class Solution {
 
         return count;
     }
+
+//    Eric's Solution
+//    int solution(int[] ranks){
+//        final List<Integer> integerRanks = IntStream.of(ranks).boxed().collect(Collectors.toList());
+//        return Math.toIntExact(integerRanks.stream().filter(dr -> integerRanks.contains(dr + 1)).count());
+//    }
 }
 
-public class Task1 {
+public class SoldierRank {
     public static void main(String[] args) {
         Solution s = new Solution();
         int[] data = {4,4,3,3,1,0};
